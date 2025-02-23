@@ -1,0 +1,44 @@
+.container {
+    text-align: center;
+    padding: 1rem;
+    margin-bottom: 11.5rem;
+  }
+  
+  .error-code {
+    font-size: 9rem;
+    font-weight: bold;
+    background: -webkit-linear-gradient(left, #a855f7, #3b82f6);
+  }
+  
+  .error-message {
+    margin-top: 1rem;
+    font-size: 1.25rem;
+    font-weight: 600;
+  }
+  
+  .error-description {
+    margin-top: 0.5rem;
+    font-size: 0.875rem;
+    max-width: 28rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .button-group {
+    margin-top: 1.5rem;
+  }
+  
+  .button {
+    padding: 0.5rem 1.5rem;
+    border: 1px solid #3b82f6;
+    color: #3b82f6;
+    border-radius: 9999px;
+    margin: 0 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .button:hover {
+    background-color: #3b82f6;
+    color: white;
+  }

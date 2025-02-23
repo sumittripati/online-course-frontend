@@ -1,0 +1,22 @@
+header{
+    border: 2px solid red;
+    background-color: rgba(0, 0, 0, 0.952);
+}
+.nav-container{
+    max-width: 140rem;
+    padding: 2rem 4rem;
+    display: flex;
+    justify-content: space-between;
+}
+.nav-container h2{
+    color: rgb(183, 185, 188);
+}
+ul{
+    display: flex;
+    gap: 3rem;
+    list-style: none;  
+}
+a{
+    text-decoration: none;
+    color: rgb(188, 188, 221);
+}

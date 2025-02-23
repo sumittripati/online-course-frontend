@@ -1,0 +1,21 @@
+.stats-section {
+    display: flex;
+    justify-content: space-around;
+    background-color: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 50px;
+  }
+  
+  .stat h2 {
+    font-size: 32px;
+    color: #fff;
+  }
+  
+  .stat p {
+    font-size: 16px;
+    color: #aaa;
+  }
+.container-two{
+  padding-top: 3rem;
+}
