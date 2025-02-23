@@ -1,8 +1,10 @@
 import React from 'react'
 import Analitycs from '../components/Analitycs'
-// import { useAuth } from '../store/auth'
+import { useAuth } from '../store/auth'
 
 const About = () => {
+
+  const { user } = useAuth();
 
   return (
     <>
@@ -10,7 +12,7 @@ const About = () => {
       <div className="hero-section">
         <div className="hero-content" style={{padding:"1rem"}}>
           {/* <p className="subtitle">We are the World Best IT Company</p> */}
-          {/* <p>Welcome {user ? `${user.username} to our website` : `to our website`} </p> */}
+          <p>Welcome {user ? `${user.username} to our website` : `to our website`} </p>
           <h1 className="title">Why choose Us</h1>
           <p className="description" style={{maxWidth:"550px"}}>
             Are you ready to take your business to the next level with

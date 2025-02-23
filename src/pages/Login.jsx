@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { useAuth } from '../store/auth';
+import { toast } from 'react-toastify';
 import './login.css';
 
 let URL = "http://localhost:3000/api/backend/login";
@@ -50,11 +51,12 @@ const Login = () => {
           console.error("Token is missing in response:", data);
         }
   
-        alert("Login successful");
+        toast.success("Login successful");
         setLoginuser({ email: "", password: "" }); // Reset form
         navigate('/');
       } else {
-        alert("Login failed: " + (data.message || "Unknown error"));
+        // alert("Login failed: " + (data.message || "Unknown error"));
+        toast.error(data.extraDetails ? data.extraDetails : data.message);
       }
   
     } catch (error) {
