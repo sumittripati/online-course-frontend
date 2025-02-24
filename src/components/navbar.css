@@ -1,5 +1,5 @@
 header{
-    border: 2px solid red;
+    /* border: 2px solid red; */
     background-color: rgba(0, 0, 0, 0.952);
 }
 .nav-container{
@@ -10,6 +10,8 @@ header{
 }
 .nav-container h2{
     color: rgb(183, 185, 188);
+    cursor: pointer;
+    color: salmon;
 }
 ul{
     display: flex;

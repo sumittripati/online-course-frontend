@@ -16,10 +16,10 @@ const Service = () => {
 
 {
     services.map((curElem, index) => {
-        const {price, description, provider, service} = curElem
+        const {price, description, provider, service, image} = curElem
         return (
             <div className="card" key={index}>
-            <img src=""alt="Illustration of people working on a computer and various digital tools" className="card-image"/>
+              <img src="https://media.istockphoto.com/id/537331500/photo/programming-code-abstract-technology-background-of-software-deve.jpg?s=612x612&w=0&k=20&c=jlYes8ZfnCmD0lLn-vKvzQoKXrWaEcVypHnB5MuO-g8=" alt="Illustration of people working on a computer and various digital tools" className="card-image"/>
             <div className="card-info">
                 <span>{provider}</span>
                 <span>{price}</span>

@@ -9,7 +9,7 @@ const Home = () => {
       <div className="hero-section">
         <div className="hero-content">
           <p className="subtitle">We are the World Best IT Company</p>
-          <h1 className="title">Welcome to Thapa Technical</h1>
+          <h1 className="title">Welcome to Web Development</h1>
           <p className="description">
             Are you ready to take your business to the next level with
             cutting-edge IT solutions? Look no further! At Thapa Technical, we
@@ -37,7 +37,7 @@ const Home = () => {
         </div>
         <div className="hero-content">
             <p className="subtitle">We are the World Best IT Company</p>
-            <h1 className="title">Welcome to Thapa Technical</h1>
+            <h1 className="title">Welcome to Web Development</h1>
             <p className="description">Are you ready to take your business to the next level with cutting-edge IT solutions? Look no further! At Thapa Technical, we
                   specialize in providing innovative IT services and solutionstailored to meet your unique needs.</p>
             <div className="herobuttons">

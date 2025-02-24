@@ -1,0 +1,121 @@
+  /* Container to center the content and provide spacing */
+.admin-user-section {
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 1200px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+}
+
+/* Title Section */
+.admin-user-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.admin-user-container h1 {
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+/* Table Styling */
+.admin-users {
+    margin-top: 20px;
+    overflow-x: auto; /* Make it scrollable if the table is wide */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border: 1px solid #ddd;
+}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+/* Action Buttons Styling */
+button {
+    padding: 6px 12px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hover and active states */
+button:hover {
+    background-color: #ff9800;
+    color: white;
+}
+
+button:active {
+    background-color: #e65100;
+}
+
+/* Custom Styles for Edit and Delete buttons */
+button.edit {
+    background-color: #4CAF50; /* Green for Edit */
+    color: white;
+}
+
+button.delete {
+    background-color: #f44336; /* Red for Delete */
+    color: white;
+}
+
+/* Hover effect for Edit/Delete buttons */
+button.edit:hover {
+    background-color: #45a049;
+}
+
+button.delete:hover {
+    background-color: #e53935;
+}
+
+/* Loading and empty state messages */
+.admin-user-container p {
+    font-size: 1.1rem;
+    color: #555;
+    text-align: center;
+}
+
+/* Responsiveness: For small screens */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+        font-size: 0.9rem;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+
+    .admin-user-container h1 {
+        font-size: 1.8rem;
+    }
+}
