@@ -1,5 +1,6 @@
 .contact-container{
-    padding-top: 1rem;
+    border: 2px solid red;
+    padding-top: 5rem;
     color: white;
     display: flex;
     justify-content: center;

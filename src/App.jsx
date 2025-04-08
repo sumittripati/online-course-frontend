@@ -6,7 +6,7 @@ import Contact from './pages/Contact'
 import Service from './pages/Service'
 import Register from './pages/Register'
 import Login from './pages/Login'
-import Navbar from './components/Navbar'
+import Header from './components/Header'
 import Errorpage from './pages/Errorpage'
 import Logout  from './pages/Logout'
 import Footer from './components/Footer'
@@ -14,12 +14,16 @@ import Adminlayout from './components/layout/Adminlayout'
 import AdminUsers from './pages/AdminUsers'
 import AdminContacts from './pages/AdminContacts'
 import Adminupdate from './pages/Adminupdate'
+import CourseDetails from './pages/CourseDetails'
+import PaymentMethod from './pages/PaymentMethod'
+import PaymentInfo from './pages/PaymentInfo'
+import './components/header.css'
 
 const App = () => {
   return (
     <>
       <BrowserRouter>
-        <Navbar />
+        <Header />
          <Routes>
            <Route path="/" element={<Home />} />
            <Route path="/about" element={<About/>} />
@@ -28,6 +32,9 @@ const App = () => {
            <Route path="/login" element={<Login/>} />
            <Route path="/logout" element={<Logout/>} />
            <Route path="/contact" element={<Contact/>} />
+           <Route path="/course/:courseId" element={<CourseDetails/>} />
+           <Route path="/payment-method/:courseId" element={<PaymentMethod/>} />
+           <Route path="/payment-info/:courseId/:paymentMethod" element={<PaymentInfo/>} />
            <Route path="*" element={<Errorpage/>} />
 
            <Route path="/admin" element={<Adminlayout/>}>
